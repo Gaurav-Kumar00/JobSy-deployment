@@ -123,7 +123,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-    origin: "https://jobsy-g6v2.onrender.com",
+    origin: ["https://jobsy-g6v2.onrender.com", "http://localhost:5050"],
     credentials: true,
 };
 app.use(cors(corsOptions));
